@@ -1,0 +1,29 @@
+body
+{
+    background-image: url("IMG1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /* padding: 15px; */
+}
+h1{
+    font-family: "Honk";
+    font-size: 100px;
+   text-align: center;
+}
+p
+{
+    color: chartreuse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    border-style: ridge;
+    border-color: silver;
+    border-radius: 10px;
+    padding: 5px;
+
+    background-color: black;
+    background: linear-gradient(to left,rgb(252, 25, 25),rgb(63, 55, 55));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
