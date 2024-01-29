@@ -1,0 +1,18 @@
+
+#div1
+{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+}
+#div2
+{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: coral;
+    margin-top: 10px;
+}
