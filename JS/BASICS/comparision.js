@@ -8,8 +8,8 @@ console.log(2>"01");
 
 //**************imp i.e. except == operator the remaining operators makes the value null as 0 */
 console.log(null < 0);
-console.log(null >= 0);
-console.log(null == 0);
+console.log(null >= 0);//true
+console.log(null == 0);//false
 
 console.log(undefined==0);
 console.log(undefined>=0);
