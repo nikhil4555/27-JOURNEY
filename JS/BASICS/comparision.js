@@ -5,7 +5,7 @@ console.log(2>=1);
 //confusion arises when you compare 2 different datatypes
 console.log("2">1);
 console.log(2>"01");
-
+console.log(2+2+7+8+4+"9"+6);
 //**************imp i.e. except == operator the remaining operators makes the value null as 0 */
 console.log(null < 0);
 console.log(null >= 0);//true

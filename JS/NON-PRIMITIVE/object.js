@@ -10,7 +10,7 @@ const symbol = Symbol('key1')
 
 const user = {
     name: "Nikhil",
-    "fullname":"gummadavelly nikhil",
+    fullname:"gummadavelly nikhil",
     [symbol]:"mykey1",//to reference a symbol
     age: 20,
     location:"hyderabad",
