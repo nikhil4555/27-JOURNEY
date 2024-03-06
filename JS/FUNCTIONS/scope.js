@@ -3,9 +3,9 @@
 let a = 9;
 if(true)
 {
-    let a =10;
+    let a =10;//block scope
     const b =20;
-    var c = 30;
+    var c = 30;//global scope
     console.log('inner of let',a);
 }
 
