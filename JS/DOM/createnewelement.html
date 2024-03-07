@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>create new elemnt through dom</title>
+<style>
+    body
+    {
+        background-color: black;
+        color: lavender;
+    }
+</style>
+
+</head>
+<body>
+    Nikhil GUMMADAVELLY
+</body>
+<script>
+    let div = document.createElement('div')
+    console.log(div);
+
+    div.className = 'maindiv';
+    div.id = Math.round(Math.random()*10+1);  
+
+    div.setAttribute('title','genes')
+    div.style.backgroundColor='red'
+    div.style.padding = '12px'
+    // div.innerHTML= 'Nikhil Gummadavelly'
+
+    let addtext = document.createTextNode("chai aur code yt")
+    div.appendChild(addtext);  // adding text to the created element
+
+    document.body.appendChild(div);
+</script>
+</html>
