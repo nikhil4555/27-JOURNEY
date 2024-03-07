@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Dom manipluation</title>
+    <style>
+        body
+        {
+            background-color: black;
+            color: burlywood;
+            font-family: Arial, sans-serif;
+            text-decoration: dotted;
+            text-shadow: 2px 2px 1px white ;
+            padding: 15px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="lang">
+        <li>JAvaScripit</li>
+    </ul>
+</body>
+    <script>
+        //adding way-1
+        function addlanguage(lang)//here inthis it takes more space that everytimes it adds it shoulld traverse each element
+        {
+            let li = document.createElement('li');
+            li.innerHTML = `${lang}`
+            let parent = document.querySelector('.lang');
+            parent.appendChild(li);             
+        }
+        addlanguage('python');
+        addlanguage( 'C++');
+        addlanguage('Java');
+
+        //adding way-2
+        function optimalwayadd(lang)
+        {
+         let li = document.createElement('li');   
+         let addtext=document.createTextNode(lang);
+         li.appendChild(addtext);//appending i.e. adding the child using textnode to the li
+
+         let parent = document.querySelector('.lang');
+         parent.appendChild(li);    
+        }
+
+        optimalwayadd('golang');
+        optimalwayadd( 'C$');
+        optimalwayadd('Javascripting');
+
+        //editing
+        let seclan = document.querySelector('li:nth-child(2)')
+        //adding way-3
+        let newli = document.createElement('li')
+        newli.textContent = "Moji"
+        seclan.replaceWith(newli);
+
+        //adding way-4
+        let frstlan = document.querySelector('li:first-child')
+        frstlan.outerHTML = `<li>php</li>`
+
+        // removing the added elemnt in li
+
+        let last = document.querySelector('li:last-child')
+        last.remove();
+
+
+    </script>
+</html>
