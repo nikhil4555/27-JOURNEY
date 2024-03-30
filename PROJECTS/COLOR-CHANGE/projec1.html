@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLICK THE BOX AND CHANGE BG-COLOR</title>
+    <style>
+        body
+        {
+            margin: 0px;
+            padding:0px;
+            background:#f5f5f5;
+
+        }
+        .box
+        {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 10px;
+            padding: 5px;
+            display: inline-block; 
+            cursor: pointer;
+            
+
+        }
+        #red
+        {
+            background-color: red;
+        }
+        #green
+        {
+            background-color: green;
+        }
+        #blue
+        {
+            background-color: blue;
+        }
+        #violet
+        {
+            background-color: violet;
+        }
+        #grey
+        {
+            background-color: grey;
+        }
+        #yellow
+        {
+            background-color: yellow;
+        }
+        h1
+        {
+            border: 5px double greenyellow;
+            margin: 5px;
+            padding: 5px;
+            padding-left: 8px;
+        }
+        .box:hover { /* Add hover effect for visual feedback */
+    cursor: pointer;
+    opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    
+    <span class="box" id="red">RED</span>
+    <span class="box" id="green">GREEN</span>
+    <span class="box" id="blue">BLUE</span>
+    <span class="box" id="violet">VIOLET</span>
+    <span class="box" id="grey">GREY</span>
+    <span class="box" id="yellow">YELLOW</span>
+    <h1>CLICK ON THE BOX AND SEE THE MAGIC</h1>
+
+    <script src="project1.js"></script>
+
+</body>
+</html>
