@@ -1,0 +1,44 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #cfcf;
+    
+}
+h1{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px grey;
+}
+h2{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 2px 5px 4px grey;
+}
+.details{
+   padding: 15px;
+   font-size: x-large;
+   font-weight: bold;
+   color: darkblue;
+}
+input
+{
+    width: 200px;
+    height: 35px
+}
+
+#calc
+{
+    width: 150px;
+    height: 55px;
+    
+}
+.result
+{
+    margin: 5px;
+    border: 4px double magenta ;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: larger;
+    width: 350px;
+}
