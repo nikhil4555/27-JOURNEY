@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIGITAL CLOCK</title>
+<style>
+    body {
+        background-image: url('TIME_PIC.png');
+        background-size: cover;
+        background-position: unset;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        opacity: 0.9; /*Background image transparency*/
+    }
+
+    .container {
+        color: yellow;
+        font-variant: small-caps;
+        font-size: xx-large;
+        font-family: fantasy;
+        font-stretch: expanded;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #time {
+        width: 250px;
+        height: 100px;
+        background-color: rgba(49, 25, 106, 0.8); /*Transparent background color */
+        display: flex;
+        align-items: center;
+        color: tomato;
+        text-align: center;
+        margin: 60px auto 0;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        #time {
+            width: 200px;
+            height: 80px;
+            margin-top: 40px;
+            padding: 20px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        #time {
+            width: 150px;
+            height: 60px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        #time {
+            width: 150px;
+            height: 105px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <span>EACH AND EVERY SECOND MATTER'S NIKHIL..... </span>
+    <div id="time"></div>
+</div>
+
+<script src="script_digital.js"></script>
+</body>
+</html>
