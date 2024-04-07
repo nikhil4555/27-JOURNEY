@@ -1,0 +1,47 @@
+body
+{
+    /* margin:0;
+    padding: 0; */
+    background: linear-gradient(69deg,#da2f2f,rgb(132, 118, 118));
+    background-repeat:space;
+    background-position: auto;
+}
+.box
+{
+    font-size: xx-large;
+    text-shadow: 4px 2px 3px rgb(195, 203, 123);
+  
+}
+#guess
+{
+    text-align: center;
+    width: 250px;
+    height: 5vh;
+    font-size: 2em;
+    /* position: absolute; */
+}
+#submit
+{
+    font-size: 2em;
+    display: block;
+    margin-top:5px;
+    padding: 5px;
+    border: 1px solid  ;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submit:hover
+{
+    
+    text-decoration: line-through;
+    filter: blur(.4px);
+    color: rgb(234, 26, 26);
+}
+.result
+{
+    font-size: xx-large;
+    font-weight: 100;
+    text-shadow: 2px 3px 1px grey;
+    /* text-transform: 5px  uppercase; */
+    letter-spacing: .3rem
+}
