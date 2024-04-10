@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-js-basics</title>
+</head>
+<body>
+    <h1>Images here</h1>
+    <ul id="gallery">
+        <li><img width="200px" id="piegeon" src="https://cdn.pixabay.com/photo/2018/01/22/08/45/bird-3098447_1280.jpg" alt="piegeon"></li>
+        <li><img width="200px" id="eagle" src="https://cdn.pixabay.com/photo/2021/07/20/18/19/bald-eagle-6481346_1280.jpg" alt=""></li>
+        <li><img width="200px" id="bird" src="https://cdn.pixabay.com/photo/2023/11/09/19/36/zoo-8378189_1280.jpg" alt=""></li>
+        <li><img width="200px" id="owl" src="https://cdn.pixabay.com/photo/2012/06/19/10/32/owl-50267_1280.jpg" alt=""></li>
+        <li><img width="200px" id="parrot" src="https://cdn.pixabay.com/photo/2024/02/16/19/22/green-parrot-8578205_1280.jpg" alt=""></li>
+       <li>
+
+           <a href="https://www.google.com"  id="google">Google</a>
+       </li> 
+    </ul>
+
+    <script>
+        //method-1
+        document.getElementById('eagle').onclick = ()=> alert("You clicked on the eagle image" + " ");
+
+        //method-2
+        document.getElementById('parrot').addEventListener('click', ()=> console.log("You are over the parrot"));
+        
+        //  default values are false then it will be from bottom to top---->event bubbling
+        // if made it as true then it wil be as top to bottom---> event capturing 
+        
+        document.getElementById('gallery').addEventListener('click',function(e){
+            console.log("Clicked on the ul")
+        },false)
+        
+        document.getElementById('piegeon').addEventListener( 'click', function(e){  
+            
+            console.log("Piegeon clicked");
+            e.stopPropagation();//stops being  passed up to parent
+        }, false)
+
+        document.getElementById('google').addEventListener('click', function(e){
+            e.preventDefault(); 
+            // e.stopPropagation();// Prevent the default action of following the link
+            console.log("Google clicked");
+        },false)
+
+//using the  target property we can get which element is clicked inside that particular click event and remove it
+        
+    document.querySelector('#gallery').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName ==='img'){
+            let removeit = e.target.parentNode;
+            removeit.remove();   //method-1
+        }
+        // removeit.parentNode.removeChild(removeit); // method -2 little bit confusing
+        //but ul -> li -> a , so we need to go one step back and then we are removing it
+    })
+    </script>
+</body>
+</html>
