@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANDOM PASSCODE</title>
+    <link href="randompass.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            
+            <div class="all">
+                <form class="data" >
+                    <div class="text-field">
+                        <h2 id="passbox">Testing</h2>
+                    </div>
+                    <div class="pass-length">
+                      <label>Passcode Length </label> 
+                      <input type="number" min="2" max="30" value="10"id="passlength">
+                    </div>
+                    <div class="upper-case">
+                        <label>Contain UpperCase</label>
+                        <input type="checkbox" id="upper" checked>
+                    </div>
+                    <div class="lower-case">
+                        <label>Contains LowerCase</label>
+                        <input type="checkbox"  id="lower">
+                    </div>
+                    <div class="numbers">
+                        <label>Contains numbers</label>
+                        <input type="checkbox"  id="number">
+                    </div>
+                    <div class="symbols">
+                        <label>Contains Symbols</label>
+                        <input type="checkbox"  id="symbols">
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" id="button">Generate</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="randompass.js"></script>
+
+</body>
+</html>
