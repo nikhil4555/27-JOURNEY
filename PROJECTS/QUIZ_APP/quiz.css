@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Satisfy&family=Zeyada&display=swap');
+body{
+    background-color: #7986CB;
+}
+.main
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+}
+#box
+{
+    width: 24.5rem;
+    /* height: 25.5rem; */  /*as we are not considering it as after removing it it will adjust auto if a queston is bigger*/
+    box-shadow: 5px 7px 35px darkblue;
+    background-color:#E8EAF6;
+    border-radius: 10px;
+    padding: 10px; 
+}
+.row
+{
+    padding: 10px;
+    color: black;
+    margin-top: 1rem;
+}
+#btn
+{
+    width: 100%;
+    padding: 8px;
+    /* border: none; */
+    border-radius: 10px;
+    color: white;
+    background-color: #7986CB;
+}
+#bt-n
+{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #7986CB;
+    margin-left: 9rem;
+}
