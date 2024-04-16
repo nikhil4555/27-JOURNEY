@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events explanation timeout</title>
+</head>
+<body>
+    <h1>Nikhil you can do it</h1>
+    <button id ="stop">STOP</button> 
+</body>
+<script>
+        const vari = function()
+        {
+            console.log('nikhil is herre');
+        }
+        const changevari = function()
+        {
+            // console.log('nikhil is herre');
+            document.querySelector('h1').innerHTML="great beta"
+        }
+        
+        setTimeout(vari,2000);
+        let changeme = setTimeout(changevari,2000);
+        // clearTimeout(changeme)//needs the reference
+        document.querySelector('#stop').addEventListener('click',(e)=>
+        {
+            clearTimeout(changeme) ;
+            console.log('stopped');     
+        })
+
+</script>
+</html>
