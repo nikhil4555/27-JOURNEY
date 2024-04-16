@@ -1,0 +1,28 @@
+.box
+{
+    padding: 25px;
+    margin: 5rem;
+    
+}
+.main
+{
+    /* background-color: black; */
+    /* margin-inline-start: 5rem; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    width: 10rem;
+    height: 5rem;
+    border: none;
+    margin: 0 1rem;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: rgba(10, 10, 10,.7);
+    color: white;
+    cursor: pointer;
+    
+}
