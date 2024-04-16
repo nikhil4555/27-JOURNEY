@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS EXPLANATION intervals</title>
+</head>
+<body>
+    <h1>Nikhil you can do it yes you can</h1>
+    <button id="start">START</button>
+    <button id ="stop">STOP</button> 
+</body>
+<script>
+
+    const start = document.getElementById('start');
+    const sto0p = document.getElementById('stop');
+
+    start.addEventListener('click',()=>{
+        console.log('start');
+        const intervsl= setInterval(dayte,1500,'pintu')
+    })
+    
+    sto0p.addEventListener('click',()=>
+    {
+        
+    })
+    const dayte = function(str)
+    {
+        console.log(str,Date.now());
+        // console.log(Date.now.toString())
+    }
+
+</script>
+</html>
